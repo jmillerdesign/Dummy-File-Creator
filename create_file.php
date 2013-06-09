@@ -65,9 +65,9 @@ class DummyFileCreator {
  */
 	public function color($color, $str) {
 		switch ($color) {
-			case 'red':		$colorCode = '0;31';	break;
-			case 'green':	$colorCode = '0;32';	break;
-			case 'brown':	$colorCode = '0;33';	break;
+			case 'red':   $colorCode = '0;31'; break;
+			case 'green': $colorCode = '0;32'; break;
+			case 'brown': $colorCode = '0;33'; break;
 		}
 		return "\033[" . $colorCode . "m$str\033[0m";
 	}
@@ -106,14 +106,14 @@ class DummyFileCreator {
 		}
 
 		switch ($suffix) {
-			case 'b':	return round($size);
-			case 'kb':	return round($size * 1000);
-			case 'kib':	return round($size * 1024);
-			case 'mb':	return round($size * 1000 * 1000);
-			case 'mib':	return round($size * 1024 * 1024);
-			case 'gb':	return round($size * 1000 * 1000 * 1000);
-			case 'gib':	return round($size * 1024 * 1024 * 1024);
-			default:	return 0;
+			case 'b':   return round($size);
+			case 'kb':  return round($size * 1000);
+			case 'kib': return round($size * 1024);
+			case 'mb':  return round($size * 1000 * 1000);
+			case 'mib': return round($size * 1024 * 1024);
+			case 'gb':  return round($size * 1000 * 1000 * 1000);
+			case 'gib': return round($size * 1024 * 1024 * 1024);
+			default:    return 0;
 		}
 	}
 
